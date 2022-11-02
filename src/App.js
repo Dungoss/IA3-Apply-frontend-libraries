@@ -2,7 +2,8 @@
 import './App.css';
 import Home from './Home';
 import Fetch from './Fetch';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import RegistForm from './Registration';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
@@ -15,8 +16,10 @@ function App() {
           <Route path="/fetch">
             <Fetch />
           </Route>
+          <Route path="/register">
+            <RegistForm />
+          </Route>
         </Switch>
-
       </div>
     </Router>
   );
