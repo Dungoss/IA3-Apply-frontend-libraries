@@ -1,9 +1,30 @@
-const Fetch = () => {
+import { useState, useEffect } from "react";
+import axios from 'axios';
+
+const UserList = () => {
+    const [isLoading, setIsLoading] = useState(true)   
+    const [data, setData] = useState([])
+
+    useEffect(() => {
+        axios.get('http://localhost:4000/users').then((res) => {
+            setData(res.data)
+            setIsLoading(false)
+        })
+    }, []
+    )
+
+    if(isLoading) {
+        return <h2>Loading...</h2>
+    }
+
     return (
-        <div className="create">
-            <h2>Fetch page</h2>
-            </div>
+        <>
+            <h2>User List Page</h2>
+            {data.map((user) => {
+                return <div key={user.name}>{user.name}</div>
+            })}
+        </>
     )
 }
 
-export default Fetch;
+export default UserList;
