@@ -16,16 +16,16 @@ function App() {
         <nav>
           <ul>
             <li>
-              <Link to='/'>Home</Link>
+              <Link className='link' to='/'>Home</Link>
             </li>
             <li>
-              <Link to='/fetch'>Fetch page</Link>
+              <Link className='link' to='/fetch'>Fetch page</Link>
             </li>
             <li>
-              <Link to='/register'>Registration page</Link>
+              <Link className='link' to='/register'>Registration page</Link>
             </li>
             <li>
-              <Link to='/rqfetch'>Fetch with RQ</Link>
+              <Link className='link' to='/rqfetch'>Fetch with RQ</Link>
             </li>
           </ul>
         </nav>

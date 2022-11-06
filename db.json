@@ -2,22 +2,22 @@
   "users": 
   [
       {
-          "id": 1,
-          "name": "dung",
-          "email": "leduydung@gmail.com",
-          "password": "123456"
+            "id": 1,
+            "name": "dung",
+            "email": "leduydung@gmail.com",
+            "password": "123456"
       },
       {
-          "id": 2,
-          "name": "nguyen",
-          "email": "nguyenlenguyen@gmail.com",
-          "password": "123456"
+            "id": 2,
+            "name": "dung1",
+            "email": "leduydung1@gmail.com",
+            "password": "123456"
       },
       {
-          "id": 3,
-          "name": "trung",
-          "email": "nguyenthanhtrung@gmail.com",
-          "password": "123456"
+            "id": 3,
+            "name": "dung2",
+            "email": "leduydung2@gmail.com",
+            "password": "123456"
       }
   ]
 }
